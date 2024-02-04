@@ -100,4 +100,12 @@ $`b=b-\alpha \frac{\partial}{\partial w} J(w, b)`$
 
 α学习率
 code：
+
+※这种方法才是对的，梯度下降在代码中要以同步更新的方式更为自然，即同步更新
+
 ![VNN AW$RAT93 ~XTH%AE`CE](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/2357a3c6-d668-416c-a9d1-ec650734f89a)
+
+注意，这段代码是由先后顺序的，比如说下面这种写法就是错的
+
+![4PZGW1@~RE{OWNZT 28OM5](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/8fcddfaf-0546-43ef-bd06-0d647f78d762)
+
