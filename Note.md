@@ -58,3 +58,46 @@ f<sub>w,b</sub>(x)=wx+b
 
 就是最小二乘法
 
+x：输入 输入特征
+f：模型
+y：模型的输出 预测
+
+### Cost Function 代价函数
+误差
+$`J(w,b)=\frac{1}{2m} \sum_{i=1}^m\left(\begin{array}{c}\hat{y}^{(i)}-y^{(i)}\end{array}\right)^2`$
+
+$`J(w, b)=\frac{1}{2 m} \sum_{i=1}^m\left(f_{w, b}\left(x^{(i)}\right)-y^{(i)}\right)^2`$
+
+使J尽可能地小，找到使J最小的w和b
+
+### 可视化代价函数
+
+![image](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/25298e81-4ffe-4426-9452-2c4f3f2cadc1)
+
+最后可以得到一个类似等高线的东西
+![E4YE%LAU WK}C4{79V@{%{G](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/9dd1f864-a976-454d-8ad0-407c5faca03f)
+
+### 可视化举例
+
+![XJ1JHP 54W U_O6FN(~$$21](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/6db7aa3b-32f6-4955-ae3f-ce03c4ad85b9)
+左图的竖线差表示的是y预测和y实际之间的差值，右图的点距离中心点（成本点，就是圆圈最密集的地方）的差距是代价
+
+梯度下降帮助我们自动寻找到最小的w和b
+
+### Gradient Descent 梯度下降
+
+梯度下降可以用于尝试最小化任何函数的算法，不仅仅是线性回归的成本函数
+
+不停更改w，b的值，使J极小
+
+可能存在不止一个极小值
+
+这不是数学公式，是代码，右边赋值给左边
+
+$`w=w-\alpha \frac{\partial}{\partial w} J(w, b)`$
+
+$`b=b-\alpha \frac{\partial}{\partial w} J(w, b)`$
+
+α学习率
+code：
+![VNN AW$RAT93 ~XTH%AE`CE](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/2357a3c6-d668-416c-a9d1-ec650734f89a)
