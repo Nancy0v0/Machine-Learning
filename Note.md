@@ -109,3 +109,22 @@ code：
 
 ![4PZGW1@~RE{OWNZT 28OM5](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/8fcddfaf-0546-43ef-bd06-0d647f78d762)
 
+
+### Alpha 学习率
+
+太大或者太小都不行
+
+### 用于线性回归的梯度下降
+![PG8KXA2$S_44{Y~A624%AAI](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/e03ec272-d415-46f0-8b54-97719f40ebaa)
+
+上面的cost function求导得到下面的，复合函数求导
+
+之前的梯度下降法可能以局部最小值结束，但如果是线性回归的平方误差成本函数，成本函数不会也永远不会有多个局部最小值
+
+在凸函数上实现梯度下降，只要选择适当的学习率，一定会收敛到全局最小值
+
+![{9~A3(V(~2CKM5{M6O{X1V7](https://github.com/Nancy0v0/Machine-Learning/assets/84230854/046d48cf-b052-46dc-b5e5-61894b1a4c68)
+
+**可选实验室**
+
+
